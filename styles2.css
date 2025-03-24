@@ -1,0 +1,477 @@
+Here is the code with the comments removed:
+
+```css
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    transform: translateX(-10%);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.hero {
+    background-color: #909090;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.breadcrumbs {
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a, .breadcrumbs span {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(41, 40, 40, 0.686);
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    height: 600px;
+    border: 10px solid #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background-color: #cac9c9;
+}
+
+.center {
+    background-color: #a8a6a6;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.right {
+    background-color: #cac9c9;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .center {
+        margin: 10px 0;
+    }
+}
+
+.tour-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tour-description {
+    width: 60%;
+    color: #666;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.package-details {
+    width: 35%;
+    background-color: #eeeeee;
+    color: #666;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.package-details h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.package-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.package-details ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.package-inclusions {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.included, .not-included {
+    width: 48%;
+    background-color: white;
+    color: #666;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #222;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.booking-section {
+    text-align: center;
+    padding: 10px;
+    background-color: #d9d9d9;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.book-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    background-color: #434343;
+}
+
+@media (max-width: 768px) {
+    .tour-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-description, .package-details {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .package-inclusions {
+        flex-direction: column;
+    }
+
+    .included, .not-included {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+.itinerary {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.itinerary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itinerary-header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.view-more {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.itinerary-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.itinerary-item {
+    width: 100%;
+    background-color: rgb(222, 218, 218);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top, rgb(77, 76, 76), transparent);
+    height: 300px;
+}
+
+.itinerary-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.itinerary-item p {
+    font-size: 0.9rem;
+    color: #6c6c6c;
+}
+
+.arrow-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.reviews {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.reviews h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.review-card {
+    width: 48%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    margin-right: 15px;
+}
+
+.reviewer-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.reviewer-info p {
+    margin: 2px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.review-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-arrow {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #03101d;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .itinerary-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itinerary-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+header {
+    background: #222121;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0px;
+}
+
+.logo2 {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.logo2 img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    margin-left: 450px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:rgb(39, 39, 39);
+    margin-top: 2px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.social-icons a {
+    font-size: 2em;
+    margin: 0 10px;
+    color: #f5f5f5;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
